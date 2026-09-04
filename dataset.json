@@ -1,0 +1,17 @@
+[
+  {
+    "task": "Write a Python function that takes an AWS S3 bucket name and a file prefix, and returns a list of all object keys in that bucket that start with the given prefix using boto3.",
+    "format": "python",
+    "solution_criteria": "The function must import boto3, create an S3 client, paginate through ListObjectsV2, filter by the prefix, and return a plain Python list of object key strings."
+  },
+  {
+    "task": "Create a JSON object that represents an IAM policy granting read\u2011only access to all objects in a specific S3 bucket named \"example-bucket\".",
+    "format": "json",
+    "solution_criteria": "The JSON must contain Version, Statement array with Effect \"Allow\", Action \"s3:GetObject\", and Resource \"arn:aws:s3:::example-bucket/*\"."
+  },
+  {
+    "task": "Write a regular expression that validates an AWS ARN for an IAM role, ensuring it matches the pattern: arn:aws:iam::account-id:role/role-name.",
+    "format": "regex",
+    "solution_criteria": "The regex must anchor the start and end, capture a 12\u2011digit account ID, and allow alphanumeric characters, hyphens, and underscores in the role name."
+  }
+]
